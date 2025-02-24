@@ -1,0 +1,190 @@
+
+    /* Reset CSS */
+    body{
+        margin: 10px;
+        padding: 1px;
+        font-family: 'Arial', sans-serif;
+        background-color: rgb(233, 95, 226);
+        color: black;
+    }
+
+    .main{
+        padding: 10px;
+        cursor: pointer;
+        color: aqua;
+    }
+    .main:hover{
+        list-style: none;
+        border: 1px #4CAF50;
+
+    }
+    .dropdown{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3{
+        width: 20px;
+        height: 5px;
+        margin: 4px 0;
+        background-color: #f7f7f7;  
+        transition: 0.2s;
+    }
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change .bar2{
+        opacity: 0;
+    }
+    .change .bar3{
+        transform: translate(0, -11px) rotate(45deg);
+    }
+    .imgLinks{
+        display: flex;
+        gap: 10px;
+    }
+    header{
+        background-color: rgb(161, 6, 136);  
+        padding: 0.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    a{
+        text-decoration-line: initial;
+        color: black;
+    }
+
+    a:hover{
+        color: white;
+    }
+
+    main{
+        padding: 10%;
+        background-color: rgb(236, 38, 226);
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+    }
+    #central{
+        width: 70%;
+        margin: auto;
+    }
+
+    footer{
+        background-color: rgb(161,6,136);
+        text-align: center;
+        padding: 5%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+    }
+    #Sim{
+        background-color: #4CAF50;
+    }
+
+    #btn {
+        position: absolute;
+        
+    }
+    button:disabled {
+        background-color: #95a5a6;
+        cursor: not-allowed;
+    }
+    #btn.canto1{
+        top: 10px;
+        right: 10px;
+    }
+    #btn.canto2{
+        bottom: 10px;
+        left: 10px;
+    }
+    #btn.canto3{
+        bottom: 10px;
+        right: 10px;
+    }
+
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .contains{
+        display: auto;
+        gap: 10px;
+    }
+    img{
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 20px;
+    }
+    @media (max-width: 600px) {
+        header{
+            padding: 5%;
+            
+        }
+        .menus{
+            text-align: center;
+        }
+        #central {
+            width: 90%;
+        }
+    
+        button {
+            width: 10%;
+            margin: 10px 0;
+        }
+
+        #header a {
+            font-size: 1em;
+        }
+
+        #central h1 {
+            font-size: 1.5em;
+        }
+
+        #central h3 {
+            font-size: 1.2em;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+        header{
+            padding: 5%;
+        }
+        .menus{
+            text-align: center;
+        }
+        #central {
+            width: 80%;
+            text-align: center;
+        }
+
+        button {
+            width: 10%;
+        }
+
+        #header a {
+            font-size: 1.1em;
+        }
+    }
+    @media (min-width: 1025px) {
+        #central {
+            width: 60%;
+            text-align: center;
+        }
+
+        button {
+            width: 10%;
+        }
+    }

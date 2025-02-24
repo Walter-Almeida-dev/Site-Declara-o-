@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Menu</title>
+</head>
+<body class="corpo">
+    <header id="rodape">
+        <div class="dropdown" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <h2>Menu</h2>
+        <nav class="menus">
+            <ul>
+                <li><a href="Imagens.html">Galeria</a></li>
+                <li><a href="ola.html">Oque eu sinto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="centro">
+        <section id="central">
+            <h1>Tudo nesse site é oq eu sinto por voce Fernanda Luiza Eu te amo</h1>
+            <p>Voce sempre sera especial para mim peste</p>
+            <h3>Pergunta simples: Voce ainda me Ama?</h3>
+            <button id="Sim" class="sim"><a href="fundo.jpg" target="_blank">sim</a></button>
+            <button id="btn" class="btn" onclick="MudarPosicao()">Nao</button>
+            <p><a href="https://www.youtube.com/results?search_query=alanzola" target="_blank">Veja</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Feito por: walter</p>
+    </footer>
+    <script>
+        
+        let btn =  document.getElementById("btn")
+        function MudarPosicao() {
+            if(!btn){
+                if(btn.classList.contains("canto1")){
+                    btn.classList.remove("canto1");
+                    btn.classList.add("canto2");
+                }else if(btn.classList.contains("canto2")){
+                    btn.classList.remove("canto2");
+                    btn.classList.add("canto3");
+                }else{
+                    btn.classList.remove("canto3");
+                    btn.classList.add("canto1")
+                }
+            }
+        btn.classList.add("canto1")
+        }
+    setTimeout(() =>{
+        btn.classList=true
+        btn.textContent = "Desabilitado"
+    }, 5000);
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+    </script>
+</body>
+</html>
