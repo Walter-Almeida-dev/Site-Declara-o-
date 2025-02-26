@@ -10,10 +10,14 @@
         padding: 1px;
         font-family: 'Arial', sans-serif;
         /*background-color: rgb(233, 95, 226);*/
-        background: url("./4nlyo46nv0tb1.jpg") no-repeat center center fixed;
+        background: url("./imagens/4nlyo46nv0tb1.jpg") no-repeat center center fixed;
         color: black;
     }
 
+    
+    .OqueSinto{
+        background-color: rgb(236, 38, 226, 0.8);
+    }
     header, main, footer {
         margin: 5px 0;
     }
@@ -55,7 +59,7 @@
         gap: 10px;
     }
     header{
-        background-color: rgb(161, 6, 136, 0.8);
+        background-color: rgb(161, 6, 136, 0.9);
         padding: 0.5rem;
         border-radius: 10px;
         box-shadow: 0 0 10px black;
@@ -90,7 +94,7 @@
     }
 
     footer{
-        background-color: rgb(161,6,136, 0.8);
+        background-color: rgb(161,6,136, 0.9);
         text-align: center;
         padding: 5%;
         border-radius: 10px;
@@ -131,6 +135,7 @@
     .contains{
         display: auto;
         gap: 10px;
+        background-color: rgb(236, 38, 226, 0.8);
     }
     img{
         max-width: 100%;
